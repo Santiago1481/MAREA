@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAREA · Route Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1>MAREA <span class="dim">/ route engine</span></h1>
+        <p>Motor Adaptativo de Rutas con Estrategias Intercambiables</p>
+      </div>
+    </div>
+    <div class="status" id="status">inicializando…</div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel left">
+      <section>
+        <h2>01 · Estrategia <span class="tag">Strategy</span></h2>
+        <div class="seg" id="strategies" role="radiogroup" aria-label="Estrategia de navegación"></div>
+      </section>
+      <section>
+        <h2>02 · Navegación <span class="tag">Command</span></h2>
+        <button id="btnRandom" class="btn primary">Ruta aleatoria</button>
+        <button id="btnCompare" class="btn">Comparar estrategias</button>
+        <p class="hint">Clic en el mapa: 1.º origen, 2.º destino.</p>
+      </section>
+      <section>
+        <h2>03 · Tráfico <span class="tag">Observer</span></h2>
+        <button id="btnIncident" class="btn warn">Inyectar incidente en la ruta</button>
+        <button id="btnUndo" class="btn ghost">Deshacer último comando</button>
+      </section>
+      <section>
+        <h2>04 · Visual</h2>
+        <label class="check"><input type="checkbox" id="chkTrace" checked /> Animar nodos explorados</label>
+      </section>
+      <section class="legend">
+        <div><i class="sw avenue"></i>Avenida 60 km/h</div>
+        <div><i class="sw street"></i>Calle 30 km/h</div>
+        <div><i class="sw bridge"></i>Puente 40 km/h</div>
+        <div><i class="sw jam"></i>Congestión</div>
+        <div><i class="sw explored"></i>Explorado</div>
+      </section>
+    </aside>
+
+    <section class="stage">
+      <canvas id="map" width="800" height="800" aria-label="Mapa de la ciudad"></canvas>
+    </section>
+
+    <aside class="panel right">
+      <section>
+        <h2>Métricas</h2>
+        <div class="kpis">
+          <div class="kpi"><span id="kMs">—</span><label>latencia</label></div>
+          <div class="kpi"><span id="kExp">—</span><label>nodos expandidos</label></div>
+          <div class="kpi"><span id="kTime">—</span><label>tiempo de viaje</label></div>
+          <div class="kpi"><span id="kDist">—</span><label>distancia</label></div>
+        </div>
+        <div class="cache">
+          <span>Caché <span class="tag">Proxy</span></span>
+          <span id="kCache" class="mono">0 hits · 0 miss</span>
+        </div>
+      </section>
+      <section id="compareBox" hidden>
+        <h2>Comparativa</h2>
+        <table class="cmp" id="cmp"></table>
+      </section>
+      <section>
+        <h2>Indicaciones <span class="tag">Iterator</span></h2>
+        <ol id="directions" class="directions"></ol>
+      </section>
+      <section>
+        <h2>Bitácora de eventos</h2>
+        <ul id="log" class="log"></ul>
+      </section>
+    </aside>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

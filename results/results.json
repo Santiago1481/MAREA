@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "date": "2026-11-23T19:41:10.328Z",
+    "node": "v24.17.0",
+    "cpu": "Intel(R) Core(TM) Ultra 7 255H",
+    "note": "Tiempos en milisegundos; \"expandidos\" = nodos extraídos de la cola de prioridad."
+  },
+  "scalability": [
+    {
+      "size": 60,
+      "nodes": 3249,
+      "edges": 5957,
+      "altPreprocessMs": 6.7,
+      "altMemoryKB": 203,
+      "strategies": {
+        "legacy": {
+          "queries": 40,
+          "meanMs": 0.436,
+          "p50Ms": 0.426,
+          "p95Ms": 0.529,
+          "meanExpanded": 3249,
+          "maxOptimalityGap": 0
+        },
+        "dijkstra": {
+          "queries": 150,
+          "meanMs": 0.178,
+          "p50Ms": 0.177,
+          "p95Ms": 0.304,
+          "meanExpanded": 1760,
+          "maxOptimalityGap": 0
+        },
+        "bidirectional": {
+          "queries": 150,
+          "meanMs": 0.257,
+          "p50Ms": 0.214,
+          "p95Ms": 0.579,
+          "meanExpanded": 1098,
+          "maxOptimalityGap": 0
+        },
+        "astar": {
+          "queries": 150,
+          "meanMs": 0.105,
+          "p50Ms": 0.073,
+          "p95Ms": 0.253,
+          "meanExpanded": 367,
+          "maxOptimalityGap": 0
+        },
+        "alt": {
+          "queries": 150,
+          "meanMs": 0.086,
+          "p50Ms": 0.058,
+          "p95Ms": 0.23,
+          "meanExpanded": 179,
+          "maxOptimalityGap": 0
+        },
+        "adaptive": {
+          "queries": 150,
+          "meanMs": 0.086,
+          "p50Ms": 0.065,
+          "p95Ms": 0.245,
+          "meanExpanded": 188,
+          "maxOptimalityGap": 0
+        }
+      }
+    },
+    {
+      "size": 100,
+      "nodes": 9083,
+      "edges": 16871,
+      "altPreprocessMs": 16.7,
+      "altMemoryKB": 568,
+      "strategies": {
+        "legacy": {
+          "queries": 40,
+          "meanMs": 1.749,
+          "p50Ms": 1.653,
+          "p95Ms": 2.341,
+          "meanExpanded": 9083,
+          "maxOptimalityGap": 0
+        },
+        "dijkstra": {
+          "queries": 150,
+          "meanMs": 0.658,
+          "p50Ms": 0.677,
+          "p95Ms": 1.162,
+          "meanExpanded": 5225,
+          "maxOptimalityGap": 0
+        },
+        "bidirectional": {
+          "queries": 150,
+          "meanMs": 0.707,
+          "p50Ms": 0.612,
+          "p95Ms": 1.43,
+          "meanExpanded": 3406,
+          "maxOptimalityGap": 0
+        },
+        "astar": {
+          "queries": 150,
+          "meanMs": 0.338,
+          "p50Ms": 0.233,
+          "p95Ms": 0.866,
+          "meanExpanded": 898,
+          "maxOptimalityGap": 0
+        },
+        "alt": {
+          "queries": 150,
+          "meanMs": 0.214,
+          "p50Ms": 0.167,
+          "p95Ms": 0.505,
+          "meanExpanded": 435,
+          "maxOptimalityGap": 0
+        },
+        "adaptive": {
+          "queries": 150,
+          "meanMs": 0.192,
+          "p50Ms": 0.127,
+          "p95Ms": 0.361,
+          "meanExpanded": 435,
+          "maxOptimalityGap": 0
+        }
+      }
+    },
+    {
+      "size": 140,
+      "nodes": 17804,
+      "edges": 33255,
+      "altPreprocessMs": 19.1,
+      "altMemoryKB": 1113,
+      "strategies": {
+        "legacy": {
+          "queries": 40,
+          "meanMs": 5.012,
+          "p50Ms": 4.673,
+          "p95Ms": 7.318,
+          "meanExpanded": 17804,
+          "maxOptimalityGap": 0
+        },
+        "dijkstra": {
+          "queries": 150,
+          "meanMs": 1.489,
+          "p50Ms": 1.452,
+          "p95Ms": 2.663,
+          "meanExpanded": 10194,
+          "maxOptimalityGap": 0
+        },
+        "bidirectional": {
+          "queries": 150,
+          "meanMs": 1.416,
+          "p50Ms": 1.238,
+          "p95Ms": 2.71,
+          "meanExpanded": 6910,
+          "maxOptimalityGap": 0
+        },
+        "astar": {
+          "queries": 150,
+          "meanMs": 0.347,
+          "p50Ms": 0.256,
+          "p95Ms": 0.816,
+          "meanExpanded": 1534,
+          "maxOptimalityGap": 0
+        },
+        "alt": {
+          "queries": 150,
+          "meanMs": 0.253,
+          "p50Ms": 0.205,
+          "p95Ms": 0.594,
+          "meanExpanded": 793,
+          "maxOptimalityGap": 0
+        },
+        "adaptive": {
+          "queries": 150,
+          "meanMs": 0.293,
+          "p50Ms": 0.219,
+          "p95Ms": 0.644,
+          "meanExpanded": 793,
+          "maxOptimalityGap": 0
+        }
+      }
+    },
+    {
+      "size": 200,
+      "nodes": 36325,
+      "edges": 68102,
+      "altPreprocessMs": 63.6,
+      "altMemoryKB": 2270,
+      "strategies": {
+        "legacy": {
+          "queries": 40,
+          "meanMs": 13.687,
+          "p50Ms": 13.429,
+          "p95Ms": 16.773,
+          "meanExpanded": 36325,
+          "maxOptimalityGap": 0
+        },
+        "dijkstra": {
+          "queries": 150,
+          "meanMs": 3.965,
+          "p50Ms": 3.77,
+          "p95Ms": 7.205,
+          "meanExpanded": 20847,
+          "maxOptimalityGap": 0
+        },
+        "bidirectional": {
+          "queries": 150,
+          "meanMs": 3.364,
+          "p50Ms": 3.235,
+          "p95Ms": 6.174,
+          "meanExpanded": 14783,
+          "maxOptimalityGap": 0
+        },
+        "astar": {
+          "queries": 150,
+          "meanMs": 1.027,
+          "p50Ms": 0.73,
+          "p95Ms": 3.213,
+          "meanExpanded": 3214,
+          "maxOptimalityGap": 0
+        },
+        "alt": {
+          "queries": 150,
+          "meanMs": 0.705,
+          "p50Ms": 0.529,
+          "p95Ms": 1.489,
+          "meanExpanded": 1442,
+          "maxOptimalityGap": 0
+        },
+        "adaptive": {
+          "queries": 150,
+          "meanMs": 0.606,
+          "p50Ms": 0.489,
+          "p95Ms": 1.242,
+          "meanExpanded": 1442,
+          "maxOptimalityGap": 0
+        }
+      }
+    }
+  ],
+  "cache": [
+    {
+      "capacity": 0,
+      "requests": 3000,
+      "hitRatio": 0,
+      "totalMs": 787.5,
+      "meanMs": 0.262,
+      "p95Ms": 0.5155,
+      "throughputRps": 3809
+    },
+    {
+      "capacity": 50,
+      "requests": 3000,
+      "hitRatio": 0.5463,
+      "totalMs": 408.2,
+      "meanMs": 0.1358,
+      "p95Ms": 0.4527,
+      "throughputRps": 7349
+    },
+    {
+      "capacity": 100,
+      "requests": 3000,
+      "hitRatio": 0.687,
+      "totalMs": 271.9,
+      "meanMs": 0.0904,
+      "p95Ms": 0.3757,
+      "throughputRps": 11034
+    },
+    {
+      "capacity": 200,
+      "requests": 3000,
+      "hitRatio": 0.8157,
+      "totalMs": 175.9,
+      "meanMs": 0.0584,
+      "p95Ms": 0.293,
+      "throughputRps": 17054
+    },
+    {
+      "capacity": 400,
+      "requests": 3000,
+      "hitRatio": 0.884,
+      "totalMs": 106.6,
+      "meanMs": 0.0354,
+      "p95Ms": 0.2332,
+      "throughputRps": 28147
+    }
+  ],
+  "traffic": {
+    "vaciado-total": {
+      "requests": 3000,
+      "incidents": 30,
+      "hitRatio": 0.4323,
+      "invalidated": 1673,
+      "flushes": 57,
+      "meanMs": 0.1779,
+      "p95Ms": 0.5641,
+      "checked": 1000,
+      "staleResponses": 0
+    },
+    "selectiva": {
+      "requests": 3000,
+      "incidents": 30,
+      "hitRatio": 0.453,
+      "invalidated": 1611,
+      "flushes": 27,
+      "meanMs": 0.1813,
+      "p95Ms": 0.5728,
+      "checked": 1000,
+      "staleResponses": 0
+    },
+    "selectiva+cotas-ALT": {
+      "requests": 3000,
+      "incidents": 30,
+      "hitRatio": 0.8017,
+      "invalidated": 340,
+      "flushes": 0,
+      "meanMs": 0.072,
+      "p95Ms": 0.3962,
+      "checked": 1000,
+      "staleResponses": 0
+    }
+  },
+  "endToEnd": {
+    "requests": 1000,
+    "altPreprocessMs": 21.7,
+    "asis": {
+      "totalMs": 5238.5,
+      "meanMs": 5.2358,
+      "p50Ms": 4.9442,
+      "p95Ms": 7.1427,
+      "maxMs": 27.128,
+      "throughputRps": 191
+    },
+    "tobeNoCache": {
+      "totalMs": 294.6,
+      "meanMs": 0.2943,
+      "p50Ms": 0.2158,
+      "p95Ms": 0.5671,
+      "maxMs": 18.478,
+      "throughputRps": 3394
+    },
+    "tobe": {
+      "totalMs": 52.4,
+      "meanMs": 0.0521,
+      "p50Ms": 0.0007,
+      "p95Ms": 0.2813,
+      "maxMs": 0.905,
+      "throughputRps": 19093
+    },
+    "speedupMean": 100.4,
+    "speedupP95": 25.4
+  }
+}
